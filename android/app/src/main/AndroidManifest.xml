@@ -3,7 +3,7 @@
    <application
         android:label="ui_fruit"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/splash">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_fruit/screens/home/home_screen.dart';
 import 'package:ui_fruit/screens/splash/splash_screen.dart';
 import 'package:ui_fruit/screens/welcome/welcome_screen.dart';
 
@@ -16,10 +17,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'First App',
+      title: 'Dier Nong Trai',
       theme: theme(),
       // home: SplashScreen(),
-      initialRoute: WelcomeScreen.routeName,
+      initialRoute: HomeScreen.routeName,
       routes: routes,
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ui_fruit/screens/home/components/product_bottom.dart';
-import 'package:ui_fruit/screens/home/components/product_card.dart';
 import 'package:ui_fruit/screens/home/components/product_recommended.dart';
 import 'package:ui_fruit/screens/home/components/search_filter.dart';
 import 'package:ui_fruit/size_config.dart';
@@ -14,7 +13,10 @@ class BodyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24),
+        padding: EdgeInsets.only(
+            left: getProportionateScreenWidth(24),
+            right: getProportionateScreenWidth(24),
+            bottom: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
